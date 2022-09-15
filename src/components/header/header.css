@@ -1,0 +1,14 @@
+.header {
+  border: 2px solid red;
+  list-style: none;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 5rem;
+  align-items: center;
+}
+.menu {
+  list-style: none;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 5rem;
+}
