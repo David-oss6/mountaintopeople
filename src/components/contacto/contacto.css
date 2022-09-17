@@ -1,0 +1,11 @@
+.container {
+  padding: 5rem;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.construction_img {
+  max-width: 40rem;
+}

@@ -28,13 +28,14 @@
   align-items: center;
   gap: 1rem;
   padding: 3rem;
-  background-color: #0c0c0c;
+  background-color: hsl(0, 0%, 5%, 98%);
 }
 .liContainer {
   display: flex;
   flex-flow: column nowrap;
   max-width: 25rem;
   gap: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .liContainer h4 {
@@ -47,4 +48,8 @@
 
 .card {
   border-radius: 12px;
+}
+.card:hover {
+  transition: 0.5s ease-out;
+  transform: translateY(-0.7rem);
 }
