@@ -17,6 +17,13 @@
   gap: 5rem;
 }
 
+.links {
+  list-style: none;
+  text-decoration: none;
+  color: hsl(0, 0%, 0%, 90%);
+  font-weight: bolder;
+}
+
 .linksModal {
   position: absolute;
   max-height: 15rem;

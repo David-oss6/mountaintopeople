@@ -13,7 +13,7 @@ export default function Header() {
   }, []);
 
   return (
-    <div className="header">
+    <nav className="header">
       <img
         className="logoHeader"
         src={imgLogo}
@@ -23,13 +23,19 @@ export default function Header() {
       {x > 700 ? (
         <ul className="menu">
           <li>
-            <Link to="/">Inicio</Link>
+            <Link className="links" to="/">
+              Inicio
+            </Link>
           </li>
           <li>
-            <Link to="/actividades">Actividades</Link>
+            <Link className="links" to="/actividades">
+              Actividades
+            </Link>
           </li>
           <li>
-            <Link to="/contacto">Contacto</Link>
+            <Link className="links" to="/contacto">
+              Contacto
+            </Link>
           </li>
         </ul>
       ) : (
@@ -37,23 +43,31 @@ export default function Header() {
           <p onClick={() => setModal(!modal)}>====</p>
           <ul className={modal ? "linksModal" : "hide"}>
             <li>
-              <Link onClick={() => setModal(false)} to="/">
+              <Link className="links" onClick={() => setModal(false)} to="/">
                 Inicio
               </Link>
             </li>
             <li>
-              <Link onClick={() => setModal(false)} to="/actividades">
+              <Link
+                className="links"
+                onClick={() => setModal(false)}
+                to="/actividades"
+              >
                 Actividades
               </Link>
             </li>
             <li>
-              <Link onClick={() => setModal(false)} to="/contacto">
+              <Link
+                className="links"
+                onClick={() => setModal(false)}
+                to="/contacto"
+              >
                 Contacto
               </Link>
             </li>
           </ul>
         </>
       )}
-    </div>
+    </nav>
   );
 }
