@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function Header() {
   const [x, setX] = useState(0);
+  const [modal, setModal] = useState(false);
   useEffect(() => {
     let x = window.innerWidth;
     console.log(x);
@@ -32,7 +33,26 @@ export default function Header() {
           </li>
         </ul>
       ) : (
-        <p>====</p>
+        <>
+          <p onClick={() => setModal(!modal)}>====</p>
+          <ul className={modal ? "linksModal" : "hide"}>
+            <li>
+              <Link onClick={() => setModal(false)} to="/">
+                Inicio
+              </Link>
+            </li>
+            <li>
+              <Link onClick={() => setModal(false)} to="/actividades">
+                Actividades
+              </Link>
+            </li>
+            <li>
+              <Link onClick={() => setModal(false)} to="/contacto">
+                Contacto
+              </Link>
+            </li>
+          </ul>
+        </>
       )}
     </div>
   );

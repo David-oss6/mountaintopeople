@@ -17,3 +17,16 @@
   flex-flow: row nowrap;
   gap: 5rem;
 }
+
+.linksModal {
+  position: absolute;
+  max-height: 15rem;
+  width: 6rem;
+  border: black 2px solid;
+  right: 0.5rem;
+  top: 4rem;
+  background-color: white;
+}
+.hide {
+  display: none;
+}
