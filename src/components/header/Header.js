@@ -7,10 +7,15 @@ import Actividades from "../main/actividades/Actividades";
 export default function Header() {
   return (
     <div className="header">
-      <img src={imgLogo} alt="mountaintopeaople" width="100px" />
+      <img
+        className="logoHeader"
+        src={imgLogo}
+        alt="mountaintopeaople"
+        width="100px"
+      />
       <ul className="menu">
         <li>
-          <Link to="/inicio">Inicio</Link>
+          <Link to="/">Inicio</Link>
         </li>
         <li>
           <Link to="/actividades">Actividades</Link>

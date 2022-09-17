@@ -4,9 +4,7 @@
 }
 .appContainer {
   display: grid;
-  grid-template-rows: 2fr 18fr 2fr;
+  grid-template-rows: 2fr 16fr 2fr;
 }
 .content {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
 }

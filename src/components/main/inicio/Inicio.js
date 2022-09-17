@@ -1,25 +1,63 @@
 import React from "react";
 import "./inicio.css";
-import careto from "../../../img/careto.jpg";
-import montaña from "../../../img/08f80931-cc38-4d9c-90b6-0927885f859f.jpg";
+import card from "../../../img/card.png";
 
 export default function Inicio() {
   return (
     <div className="main">
-      <img className="careto" src={careto} alt="careto" width="140px" />
-      <p className="texto">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-        asperiores dignissimos ipsum explicabo ullam nam, odit cumque sapiente
-        aspernatur numquam dolorem perspiciatis natus corrupti placeat expedita.
-        Eius, accusantium saepe. Mollitia!
-      </p>
-      <p className="texto">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, ratione.
-        Consequatur voluptas repellat provident cupiditate recusandae aliquam
-        distinctio et quae. Nobis, recusandae modi necessitatibus fuga
-        repellendus quisquam exercitationem itaque consequatur.
-      </p>
-      <img src={montaña} alt="paisaje" width="100%" />
+      <div className="divImg">
+        <h1 className="mainTitle">Mountain to People</h1>
+      </div>
+      <ul className="listContainer">
+        <li className="liContainer">
+          <img className="card" src={card} alt="card" />
+          <h4>Supervivencia</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+            perspiciatis vel vero quas.
+          </p>
+        </li>
+        <li className="liContainer">
+          <img className="card" src={card} alt="card" />
+          <h4>Barranquismo</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+            perspiciatis vel vero quas.
+          </p>
+        </li>
+        <li className="liContainer">
+          <img className="card" src={card} alt="card" />
+          <h4>Travesía</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+            perspiciatis vel vero quas.
+          </p>
+        </li>
+        <li className="liContainer">
+          <img className="card" src={card} alt="card" />
+          <h4>Fotografía</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+            perspiciatis vel vero quas.
+          </p>
+        </li>
+        <li className="liContainer">
+          <img className="card" src={card} alt="card" />
+          <h4>Vía Ferrata</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+            perspiciatis vel vero quas.
+          </p>
+        </li>
+        <li className="liContainer">
+          <img className="card" src={card} alt="card" />
+          <h4>Raquetas</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+            perspiciatis vel vero quas.
+          </p>
+        </li>
+      </ul>
     </div>
   );
 }

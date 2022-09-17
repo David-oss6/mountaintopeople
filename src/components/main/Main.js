@@ -9,7 +9,7 @@ export default function Main() {
   return (
     <>
       <Routes>
-        <Route path="inicio" element={<Inicio />} />
+        <Route path="" element={<Inicio />} />
         <Route path="actividades" element={<Actividades />} />
         <Route exact path="contacto" element={<Contacto />} />
       </Routes>
