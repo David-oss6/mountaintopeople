@@ -3,12 +3,9 @@
   padding: 0;
   font-family: "Poppins", Helvetica, Arial, Lucida, sans-serif;
 }
-html {
-  position: relative;
-}
+
 .appContainer {
   display: flex;
   flex-flow: column;
-  justify-content: space-between;
-  min-width: 100vw;
+  min-height: 100vh;
 }

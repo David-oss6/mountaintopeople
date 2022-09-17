@@ -1,5 +1,4 @@
 .header {
-  border: 2px solid red;
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
