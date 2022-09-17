@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./header.css";
 import imgLogo from "../../img/logo2.png";
+import hamburguer from "../../img/hamburguer.png";
 import { Link } from "react-router-dom";
 
 export default function Header() {
@@ -40,7 +41,11 @@ export default function Header() {
         </ul>
       ) : (
         <>
-          <p onClick={() => setModal(!modal)}>====</p>
+          <img
+            className="hamburguer"
+            src={hamburguer}
+            onClick={() => setModal(!modal)}
+          />
           <ul className={modal ? "linksModal" : "hide"}>
             <li>
               <Link className="links" onClick={() => setModal(false)} to="/">

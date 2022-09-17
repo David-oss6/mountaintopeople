@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: space-between;
   height: 6rem;
-  padding: 0 1rem;
+  padding: 0 4rem;
 }
 .logoHeader {
   width: 7rem;
@@ -26,12 +26,26 @@
 
 .linksModal {
   position: absolute;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  padding: 0.5rem;
+  gap: 0.7rem;
+  list-style: none;
+  min-height: 7rem;
   max-height: 15rem;
   width: 6rem;
-  border: black 2px solid;
+  border: black 1px solid;
+  border-radius: 4px;
   right: 0.5rem;
   top: 4rem;
   background-color: white;
+}
+.hamburguer {
+  max-width: 4rem;
+}
+.hamburguer:hover {
+  cursor: pointer;
 }
 .hide {
   display: none;

@@ -54,6 +54,7 @@
 .card:hover {
   transition: 0.5s ease-out;
   transform: translateY(-0.7rem);
+  cursor: pointer;
 }
 
 @media (max-width: 400px) {
