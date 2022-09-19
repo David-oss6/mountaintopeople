@@ -68,3 +68,31 @@
     max-width: 200px;
   }
 }
+
+@media (max-width: 800px) {
+  .mainTitle {
+    font-size: 3rem;
+    color: aliceblue;
+    text-shadow: 2px 2px black;
+  }
+}
+@media (max-width: 500px) {
+  .mainTitle {
+    font-size: 2rem;
+    color: aliceblue;
+    text-shadow: 2px 2px black;
+  }
+}
+
+@media (min-width: 1600px) {
+  .liContainer {
+    display: flex;
+    flex-flow: column nowrap;
+    max-width: 30rem;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  .card {
+    max-width: 35rem;
+  }
+}
