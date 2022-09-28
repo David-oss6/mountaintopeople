@@ -1,0 +1,6 @@
+.supervivenciaContainer {
+  padding: 5rem;
+  list-style: none;
+  min-height: 70vh;
+  border: 2px solid black;
+}

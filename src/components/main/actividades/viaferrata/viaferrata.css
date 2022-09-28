@@ -1,0 +1,15 @@
+.ferrataContainer {
+  /* padding: 5rem; */
+  list-style: none;
+  min-height: 70vh;
+  border: 2px solid black;
+}
+
+.ferrataTitulo {
+  min-width: 100%;
+  min-height: 40rem;
+  background-image: url("../../../../img/ferrata.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
