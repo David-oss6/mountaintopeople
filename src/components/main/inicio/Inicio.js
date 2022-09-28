@@ -1,6 +1,7 @@
 import React from "react";
 import "./inicio.css";
 import card from "../../../img/card.png";
+import { Link } from "react-router-dom";
 
 export default function Inicio() {
   return (
@@ -10,7 +11,9 @@ export default function Inicio() {
       </div>
       <ul className="listContainer">
         <li className="liContainer">
-          <img className="card" src={card} alt="card" />
+          <Link to="/actividades/supervivencia">
+            <img className="card" src={card} alt="card" />
+          </Link>
           <h4>Supervivencia</h4>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
@@ -18,7 +21,9 @@ export default function Inicio() {
           </p>
         </li>
         <li className="liContainer">
-          <img className="card" src={card} alt="card" />
+          <Link to="/actividades/barranquismo">
+            <img className="card" src={card} alt="card" />
+          </Link>
           <h4>Barranquismo</h4>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
@@ -26,7 +31,9 @@ export default function Inicio() {
           </p>
         </li>
         <li className="liContainer">
-          <img className="card" src={card} alt="card" />
+          <Link to="/actividades/travesia">
+            <img className="card" src={card} alt="card" />
+          </Link>
           <h4>Travesía</h4>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
@@ -34,7 +41,9 @@ export default function Inicio() {
           </p>
         </li>
         <li className="liContainer">
-          <img className="card" src={card} alt="card" />
+          <Link to="/actividades/fotografia">
+            <img className="card" src={card} alt="card" />
+          </Link>
           <h4>Fotografía</h4>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
@@ -42,7 +51,9 @@ export default function Inicio() {
           </p>
         </li>
         <li className="liContainer">
-          <img className="card" src={card} alt="card" />
+          <Link to="/actividades/viaferrata">
+            <img className="card" src={card} alt="card" />
+          </Link>
           <h4>Vía Ferrata</h4>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
@@ -50,7 +61,9 @@ export default function Inicio() {
           </p>
         </li>
         <li className="liContainer">
-          <img className="card" src={card} alt="card" />
+          <Link to="/actividades/raquetas">
+            <img className="card" src={card} alt="card" />
+          </Link>
           <h4>Raquetas</h4>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum

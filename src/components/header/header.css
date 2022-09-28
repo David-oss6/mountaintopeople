@@ -16,12 +16,21 @@
   flex-flow: row nowrap;
   gap: 5rem;
 }
+.flecha {
+  max-width: 1rem;
+  transform: rotate(-90deg);
+}
 
 .links {
   list-style: none;
   text-decoration: none;
   color: hsl(0, 0%, 0%, 90%);
   font-weight: bolder;
+}
+.links:hover {
+  transition: all 0.2s ease-out;
+  color: rgb(214, 167, 106);
+  text-shadow: 0.3px 0.3px;
 }
 
 .linksModal {
@@ -40,6 +49,18 @@
   right: 0.5rem;
   top: 4rem;
   background-color: white;
+}
+.actividadesModal {
+  position: absolute;
+  top: 6rem;
+  background-color: white;
+  padding: 0.6rem;
+  border-top: 3px rgb(214, 167, 106) solid;
+  list-style: none;
+  cursor: pointer;
+}
+.actividadesModal li {
+  margin-top: 0.5rem;
 }
 .hamburguer {
   max-width: 4rem;

@@ -12,6 +12,16 @@ export default function Main() {
         <Route path="/mountaintopeople" element={<Inicio />} />
         <Route path="/" element={<Inicio />} />
         <Route path="/actividades" element={<Actividades />} />
+
+        {/* RUTAS ACTIVIDADES INICIO ************** */}
+        <Route path="/actividades/supervivencia" element={<Actividades />} />
+        <Route path="/actividades/barranquismo" element={<Actividades />} />
+        <Route path="/actividades/travesia" element={<Actividades />} />
+        <Route path="/actividades/fotografia" element={<Actividades />} />
+        <Route path="/actividades/viaferrata" element={<Actividades />} />
+        <Route path="/actividades/raquetas" element={<Actividades />} />
+        {/* RUTAS ACTIVIDADES FIN ************** */}
+
         <Route exact path="/contacto" element={<Contacto />} />
       </Routes>
     </>
