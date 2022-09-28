@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/mountaintopeople/static/css/main.507503c9.css",
-    "main.js": "/mountaintopeople/static/js/main.922084c4.js",
+    "main.css": "/mountaintopeople/static/css/main.caed67d8.css",
+    "main.js": "/mountaintopeople/static/js/main.120e7c7f.js",
+    "static/media/ferrata.png": "/mountaintopeople/static/media/ferrata.6feadfde72cb7a838c15.png",
     "static/media/logo2.png": "/mountaintopeople/static/media/logo2.a755bb444da420fa6bf8.png",
     "static/media/under_construction.png": "/mountaintopeople/static/media/under_construction.1a59ea7c2e889dcfaac2.png",
     "static/media/card.png": "/mountaintopeople/static/media/card.3b9eec8d8e3df9993f86.png",
@@ -12,11 +13,11 @@
     "static/media/arrow.png": "/mountaintopeople/static/media/arrow.861f8e3b2c82430c7272.png",
     "static/media/hamburguer.png": "/mountaintopeople/static/media/hamburguer.73092e172b826565dc36.png",
     "index.html": "/mountaintopeople/index.html",
-    "main.507503c9.css.map": "/mountaintopeople/static/css/main.507503c9.css.map",
-    "main.922084c4.js.map": "/mountaintopeople/static/js/main.922084c4.js.map"
+    "main.caed67d8.css.map": "/mountaintopeople/static/css/main.caed67d8.css.map",
+    "main.120e7c7f.js.map": "/mountaintopeople/static/js/main.120e7c7f.js.map"
   },
   "entrypoints": [
-    "static/css/main.507503c9.css",
-    "static/js/main.922084c4.js"
+    "static/css/main.caed67d8.css",
+    "static/js/main.120e7c7f.js"
   ]
 }
