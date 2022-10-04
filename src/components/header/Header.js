@@ -6,7 +6,7 @@ import hamburguer from "../../img/hamburguer.png";
 import { Link } from "react-router-dom";
 
 export default function Header() {
-  const [size, setSize] = useState(0);
+  const [size, setSize] = useState("");
   const [modal, setModal] = useState(false);
   const [actividadesModal, setActividadesModal] = useState(false);
   useLayoutEffect(() => {
@@ -14,6 +14,9 @@ export default function Header() {
       setSize(window.innerWidth);
     });
   });
+  useEffect(() => {
+    setSize(window.innerWidth);
+  }, []);
 
   return (
     <nav onMouseLeave={() => setActividadesModal(false)} className="header">
