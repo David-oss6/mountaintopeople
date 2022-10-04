@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useLayoutEffect } from "react";
 import "./header.css";
 import imgLogo from "../../img/logo2.png";
 import flecha from "../../img/arrow.png";
@@ -6,14 +6,14 @@ import hamburguer from "../../img/hamburguer.png";
 import { Link } from "react-router-dom";
 
 export default function Header() {
-  const [x, setX] = useState(0);
+  const [size, setSize] = useState(0);
   const [modal, setModal] = useState(false);
   const [actividadesModal, setActividadesModal] = useState(false);
-  useEffect(() => {
-    let x = window.innerWidth;
-    console.log(x);
-    setX(x);
-  }, []);
+  useLayoutEffect(() => {
+    window.addEventListener("resize", function () {
+      setSize(window.innerWidth);
+    });
+  });
 
   return (
     <nav onMouseLeave={() => setActividadesModal(false)} className="header">
@@ -25,7 +25,7 @@ export default function Header() {
           width="100px"
         />
       </Link>
-      {x > 700 ? (
+      {size > 730 ? (
         <ul className="menu">
           <li>
             <Link
