@@ -43,7 +43,7 @@
   list-style: none;
   min-height: 7rem;
   max-height: 15rem;
-  width: 6rem;
+  width: 9rem;
   border: black 1px solid;
   border-radius: 4px;
   right: 0.5rem;
@@ -70,6 +70,13 @@
 }
 .hide {
   display: none;
+}
+
+.actividadesListInModal {
+  margin-left: 0.7rem;
+  list-style: none;
+  font-size: 0.9rem;
+  font-weight: lighter;
 }
 
 @media (max-width: 700px) {

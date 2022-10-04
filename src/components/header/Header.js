@@ -95,7 +95,10 @@ export default function Header() {
             src={hamburguer}
             onClick={() => setModal(!modal)}
           />
-          <ul className={modal ? "linksModal" : "hide"}>
+          <ul
+            onMouseLeave={() => setModal(false)}
+            className={modal ? "linksModal" : "hide"}
+          >
             <li>
               <Link className="links" onClick={() => setModal(false)} to="/">
                 Inicio
@@ -108,7 +111,40 @@ export default function Header() {
                 to="/actividades"
               >
                 Actividades
+                <img className="flecha" src={flecha} />
               </Link>
+              <ul className="actividadesListInModal">
+                <li>
+                  <Link className="links" to="/actividades/supervivencia">
+                    Supervivencia
+                  </Link>
+                </li>
+                <li>
+                  <Link className="links" to="/actividades/barranquismo">
+                    Barranquismo
+                  </Link>
+                </li>
+                <li>
+                  <Link className="links" to="/actividades/travesia">
+                    Travesía
+                  </Link>
+                </li>
+                <li>
+                  <Link className="links" to="/actividades/fotografia">
+                    Fotografía
+                  </Link>
+                </li>
+                <li>
+                  <Link className="links" to="/actividades/viaferrata">
+                    Vía Ferrata
+                  </Link>
+                </li>
+                <li>
+                  <Link className="links" to="/actividades/raquetas">
+                    Raquetas
+                  </Link>
+                </li>
+              </ul>
             </li>
             <li>
               <Link
