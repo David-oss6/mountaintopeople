@@ -6,6 +6,7 @@ import Inicio from "./inicio/Inicio";
 import Contacto from "../contacto/Contacto";
 import Supervivencia from "./actividades/supervivencia/Supervivencia";
 import Viaferrata from "./actividades/viaferrata/Viaferrata";
+import Travesia from "./actividades/travesia/Travesia";
 
 export default function Main() {
   return (
@@ -18,7 +19,7 @@ export default function Main() {
         {/* RUTAS ACTIVIDADES INICIO ************** */}
         <Route path="/actividades/supervivencia" element={<Supervivencia />} />
         <Route path="/actividades/barranquismo" element={<Actividades />} />
-        <Route path="/actividades/travesia" element={<Actividades />} />
+        <Route path="/actividades/travesia" element={<Travesia />} />
         <Route path="/actividades/fotografia" element={<Actividades />} />
         <Route path="/actividades/viaferrata" element={<Viaferrata />} />
         <Route path="/actividades/raquetas" element={<Actividades />} />
