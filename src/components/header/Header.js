@@ -9,6 +9,8 @@ export default function Header() {
   const [size, setSize] = useState("");
   const [modal, setModal] = useState(false);
   const [actividadesModal, setActividadesModal] = useState(false);
+  const [inicioModal, setInicioModal] = useState(false);
+  const [rutasModal, setRutasModal] = useState(false);
   useLayoutEffect(() => {
     window.addEventListener("resize", function () {
       setSize(window.innerWidth);
@@ -17,9 +19,21 @@ export default function Header() {
   useEffect(() => {
     setSize(window.innerWidth);
   }, []);
+  useEffect(() => {
+    setInicioModal(false);
+  }, [actividadesModal]);
+  useEffect(() => {
+    setActividadesModal(false);
+    setRutasModal(false);
+  }, [inicioModal]);
+  const modalsOff = () => {
+    setActividadesModal(false);
+    setInicioModal(false);
+    setRutasModal(false);
+  };
 
   return (
-    <nav onMouseLeave={() => setActividadesModal(false)} className="header">
+    <nav onMouseLeave={() => modalsOff()} className="header">
       <Link to="/">
         <img
           className="logoHeader links"
@@ -32,63 +46,73 @@ export default function Header() {
         <ul className="menu">
           <li>
             <Link
-              onMouseOver={() => setActividadesModal(false)}
+              onMouseOver={() => setInicioModal(true)}
               className="links"
               to="/"
             >
-              Inicio
-            </Link>
-          </li>
-          <li>
-            <Link
-              onMouseOver={() => setActividadesModal(true)}
-              className="links"
-              to="/actividades"
-            >
-              Actividades
+              INICIO
               <img className="flecha" src={flecha} />
             </Link>
-            <ul className={actividadesModal ? "actividadesModal" : "hide"}>
+            <ul className={inicioModal ? "inicioModal" : "hide"}>
               <li>
-                <Link className="links" to="/actividades/supervivencia">
-                  Supervivencia
+                <Link className="links" to="/actividades/cimas">
+                  QUIEN SOY
                 </Link>
               </li>
               <li>
-                <Link className="links" to="/actividades/barranquismo">
-                  Barranquismo
-                </Link>
-              </li>
-              <li>
-                <Link className="links" to="/actividades/travesia">
-                  Travesía
-                </Link>
-              </li>
-              <li>
-                <Link className="links" to="/actividades/fotografia">
-                  Fotografía
-                </Link>
-              </li>
-              <li>
-                <Link className="links" to="/actividades/viaferrata">
-                  Vía Ferrata
-                </Link>
-              </li>
-              <li>
-                <Link className="links" to="/actividades/raquetas">
-                  Raquetas
+                <Link
+                  onMouseOver={() => setActividadesModal(false)}
+                  className="links"
+                  to="/contacto"
+                >
+                  CONTACTO
                 </Link>
               </li>
             </ul>
           </li>
           <li>
-            <Link
-              onMouseOver={() => setActividadesModal(false)}
-              className="links"
-              to="/contacto"
-            >
-              Contacto
-            </Link>
+            <ul onMouseOver={() => setActividadesModal(true)}>
+              ACTIVIDADES
+              <img className="flecha" src={flecha} />
+            </ul>
+            <ul className={actividadesModal ? "actividadesModal" : "hide"}>
+              <li>
+                <Link
+                  onMouseOver={() => setRutasModal(true)}
+                  className="links"
+                  to="/rutas"
+                >
+                  RUTAS
+                  <img className="flecha" src={flecha} />
+                </Link>
+                <ul className={rutasModal ? "rutasModal" : "hide"}>
+                  <li>
+                    <Link className="links" to="/actividades/cimas">
+                      CIMAS
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="links" to="/actividades/travesias">
+                      TRAVESIAS
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="links" to="/actividades/excursiones">
+                      EXCURSIONES
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="links" to="/actividades/raquetas">
+                      RAQUETAS
+                    </Link>
+                  </li>
+                </ul>
+                <li>EXPERIENCIAS DE SUPERVIVENCIA</li>
+                <li>CALENDARIO</li>
+                <li>TEAM BUILDING</li>
+                <li>FORMACION</li>
+              </li>
+            </ul>
           </li>
         </ul>
       ) : (

@@ -50,6 +50,30 @@
   top: 4rem;
   background-color: white;
 }
+.inicioModal {
+  position: absolute;
+  top: 6rem;
+  background-color: white;
+  padding: 0.6rem;
+  border-top: 3px rgb(214, 167, 106) solid;
+  list-style: none;
+  cursor: pointer;
+}
+.inicioModal li {
+  margin-top: 0.5rem;
+}
+.rutasModal {
+  position: absolute;
+  top: 6rem;
+  background-color: white;
+  padding: 0.6rem;
+  border-top: 3px rgb(214, 167, 106) solid;
+  list-style: none;
+  cursor: pointer;
+}
+.rutasModal li {
+  margin-top: 0.5rem;
+}
 .actividadesModal {
   position: absolute;
   top: 6rem;

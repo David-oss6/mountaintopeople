@@ -17,11 +17,14 @@ export default function Main() {
         <Route path="/actividades" element={<Actividades />} />
 
         {/* RUTAS ACTIVIDADES INICIO ************** */}
-        <Route path="/actividades/supervivencia" element={<Supervivencia />} />
-        <Route path="/actividades/barranquismo" element={<Actividades />} />
-        <Route path="/actividades/travesia" element={<Travesia />} />
-        <Route path="/actividades/fotografia" element={<Actividades />} />
-        <Route path="/actividades/viaferrata" element={<Viaferrata />} />
+        <Route path="/actividades/rutas" element={<Actividades />} />
+        <Route path="/actividades/cimas" element={<Actividades />} />
+        <Route
+          path="/actividades/travesia"
+          element={<Travesia travesia={"travesia"} />}
+        />
+        <Route path="/actividades/excursiones" element={<Actividades />} />
+
         <Route path="/actividades/raquetas" element={<Actividades />} />
         {/* RUTAS ACTIVIDADES FIN ************** */}
 
