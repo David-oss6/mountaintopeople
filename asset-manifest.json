@@ -1,23 +1,27 @@
 {
   "files": {
-    "main.css": "/mountaintopeople/static/css/main.9a8dfbac.css",
-    "main.js": "/mountaintopeople/static/js/main.f7752db8.js",
+    "main.css": "/mountaintopeople/static/css/main.a114820e.css",
+    "main.js": "/mountaintopeople/static/js/main.c02fee65.js",
+    "static/media/DSC08533.JPG": "/mountaintopeople/static/media/DSC08533.cf199b4b545b8f89e091.JPG",
+    "static/media/expediciones.jpg": "/mountaintopeople/static/media/expediciones.a3885debbaca785513f1.jpg",
+    "static/media/travesiaCard.jpg": "/mountaintopeople/static/media/travesiaCard.c5c1d4e0a3277ac6ec5e.jpg",
+    "static/media/inicioPortada.jpg": "/mountaintopeople/static/media/inicioPortada.d35e4aae41a102ad2812.jpg",
     "static/media/ferrata.png": "/mountaintopeople/static/media/ferrata.6feadfde72cb7a838c15.png",
     "static/media/logo2.png": "/mountaintopeople/static/media/logo2.a755bb444da420fa6bf8.png",
     "static/media/under_construction.png": "/mountaintopeople/static/media/under_construction.1a59ea7c2e889dcfaac2.png",
     "static/media/card.png": "/mountaintopeople/static/media/card.3b9eec8d8e3df9993f86.png",
-    "static/media/08f80931-cc38-4d9c-90b6-0927885f859f.jpg": "/mountaintopeople/static/media/08f80931-cc38-4d9c-90b6-0927885f859f.6511ebf8257b23e7f759.jpg",
+    "static/media/teamBuildingCard.jpg": "/mountaintopeople/static/media/teamBuildingCard.6511ebf8257b23e7f759.jpg",
     "static/media/youtube.png": "/mountaintopeople/static/media/youtube.3e675bd3031181ad41b8.png",
     "static/media/instagram.png": "/mountaintopeople/static/media/instagram.058a0270bec9c494bc6b.png",
     "static/media/facebook.png": "/mountaintopeople/static/media/facebook.27f3065ed92fc01c1a88.png",
     "static/media/arrow.png": "/mountaintopeople/static/media/arrow.861f8e3b2c82430c7272.png",
     "static/media/hamburguer.png": "/mountaintopeople/static/media/hamburguer.73092e172b826565dc36.png",
     "index.html": "/mountaintopeople/index.html",
-    "main.9a8dfbac.css.map": "/mountaintopeople/static/css/main.9a8dfbac.css.map",
-    "main.f7752db8.js.map": "/mountaintopeople/static/js/main.f7752db8.js.map"
+    "main.a114820e.css.map": "/mountaintopeople/static/css/main.a114820e.css.map",
+    "main.c02fee65.js.map": "/mountaintopeople/static/js/main.c02fee65.js.map"
   },
   "entrypoints": [
-    "static/css/main.9a8dfbac.css",
-    "static/js/main.f7752db8.js"
+    "static/css/main.a114820e.css",
+    "static/js/main.c02fee65.js"
   ]
 }
