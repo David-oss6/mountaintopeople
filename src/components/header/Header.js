@@ -82,8 +82,9 @@ export default function Header() {
                   className="links"
                   to="/rutas"
                 >
+                  <img className="flechaRutas" src={flecha} />
                   RUTAS
-                  <img className="flecha" src={flecha} />
+
                 </Link>
                 <ul className={rutasModal ? "rutasModal" : "hide"}>
                   <li>
@@ -107,7 +108,9 @@ export default function Header() {
                     </Link>
                   </li>
                 </ul>
-                <li>EXPERIENCIAS DE SUPERVIVENCIA</li>
+                <li
+                  onMouseOver={() => setRutasModal(false)}
+                >EXPERIENCIAS DE SUPERVIVENCIA</li>
                 <li>CALENDARIO</li>
                 <li>TEAM BUILDING</li>
                 <li>FORMACION</li>
